@@ -1,11 +1,12 @@
 {
-  "name": "react-weather",
+  "name": "react-timer",
   "version": "1.0.0",
   "description": "Simple React Weather App",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js",
+    "serve": "forever start server.js",
+    "watch": "webpack -w",
     "test": "karma start",
     "deploy": "git add . && git commit -am 'auto-commit' && git push origin master && git push heroku master"
   },
@@ -36,6 +37,7 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
     "node-sass": "^4.5.3",
+    "react-addons-test-utils": "^0.14.7",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
